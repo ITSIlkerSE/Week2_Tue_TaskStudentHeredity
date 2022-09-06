@@ -19,8 +19,8 @@ public class ComputerScienceStudent extends Student {
         this.favoriteLang = favoriteLang;
     }
 
-    public String getCourse(){
-        return "test for abstract mehtod";
+    @Override
+    public String getCourse() {
+        return "test for abstract method";
     }
-
 }

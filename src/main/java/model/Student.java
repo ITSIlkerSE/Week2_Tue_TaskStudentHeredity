@@ -30,7 +30,7 @@ public abstract class Student {
         this.name = name;
     }
 
-    abstract String getCourse();
+    public abstract String getCourse();
 
 
 

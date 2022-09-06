@@ -2,6 +2,8 @@ package model;
 
 import org.junit.jupiter.api.Test;
 
+import java.lang.constant.Constable;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class StudentTest {
@@ -40,5 +42,21 @@ class StudentTest {
         assertEquals(false, actual);
 
     }
+
+    @Test
+    void testMyAbstractMethodInNonAbstractClass(){
+
+        //Given
+        Student student1 = new ComputerScienceStudent("241242", "hans","C++");
+        //When
+        String actual = student1.getCourse();
+        //Then
+
+        assertEquals("test for abstract method", actual);
+
+
+    }
+
+
 
 }
