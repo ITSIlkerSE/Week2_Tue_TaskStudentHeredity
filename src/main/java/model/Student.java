@@ -7,10 +7,17 @@ public abstract class Student {
     private String id;
     private String name;
 
+    private String address;
 
-    public Student(String id, String name) {
+    private int identityCardNumber;
+
+
+    public Student(String id, String name, String studentAddress, int identityCardNumber) {
         this.id = id;
         this.name = name;
+        this.address = studentAddress;
+        this.identityCardNumber = identityCardNumber;
+
 
     }
 
@@ -30,8 +37,23 @@ public abstract class Student {
         this.name = name;
     }
 
-    public abstract String getCourse();
+    public String getAddress() {
+        return address;
+    }
 
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public int getIdentityCardNumber() {
+        return identityCardNumber;
+    }
+
+    public void setIdentityCardNumber(int identityCardNumber) {
+        this.identityCardNumber = identityCardNumber;
+    }
+
+    public abstract String getCourse();
 
 
     @Override
@@ -54,9 +76,11 @@ public abstract class Student {
 
     @Override
     public String toString() {
-        return "Student{" +
+        return "Student {" +
                 "id='" + id + '\'' +
                 ", name='" + name + '\'' +
+                ", studentAddress='" + address + '\'' +
+                ", studentIdentityCardNumber=" + identityCardNumber +
                 '}';
     }
 }

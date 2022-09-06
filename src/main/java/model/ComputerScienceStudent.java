@@ -1,12 +1,12 @@
 package model;
 
-public class ComputerScienceStudent extends Student {
+public class ComputerScienceStudent extends Student implements Citizen {
 
 
     private String favoriteLang;
 
-    public ComputerScienceStudent(String id, String name, String favoriteLang) {
-        super(id, name);
+    public ComputerScienceStudent(String id, String name, String favoriteLang, String address, int identityCardNumber) {
+        super(id, name, address, identityCardNumber);
         this.favoriteLang = favoriteLang;
     }
 
@@ -23,4 +23,6 @@ public class ComputerScienceStudent extends Student {
     public String getCourse() {
         return "test for abstract method";
     }
+
+
 }

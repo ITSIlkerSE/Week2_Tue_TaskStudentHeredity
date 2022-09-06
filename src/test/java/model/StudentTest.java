@@ -9,12 +9,11 @@ import static org.junit.jupiter.api.Assertions.*;
 class StudentTest {
 
 
-
     @Test
-    void testEquals_whenSameStudents_returnTrue(){
+    void testEquals_whenSameStudents_returnTrue() {
         // GIVE
-        Student student1 = new ComputerScienceStudent("123", "Ilker","german");
-        Student student2 = new ComputerScienceStudent("123", "Ilker","german");
+        Student student1 = new ComputerScienceStudent("123", "Ilker", "german", "Hamburg", 72248);
+        Student student2 = new ComputerScienceStudent("123", "Ilker", "german", "Hamburg", 72248);
 
         // WHEN
         boolean actual = student1.equals(student2);
@@ -24,13 +23,13 @@ class StudentTest {
     }
 
     @Test
-    void testIfStudentsAreEqualReturnFalse(){
+    void testIfStudentsAreEqualReturnFalse() {
 
 
         //Given
 
-        Student student1 = new ComputerScienceStudent("4332", "Ilker","german");
-        Student student2 = new ComputerScienceStudent("41214", "Hans","english");
+        Student student1 = new ComputerScienceStudent("4332", "Ilker", "german", "Hamburg", 72248);
+        Student student2 = new ComputerScienceStudent("41214", "Hans", "english", "Flensburg", 44421);
 
         //When
 
@@ -44,10 +43,10 @@ class StudentTest {
     }
 
     @Test
-    void testMyAbstractMethodInNonAbstractClass(){
+    void testMyAbstractMethodInNonAbstractClass() {
 
         //Given
-        Student student1 = new ComputerScienceStudent("241242", "hans","C++");
+        Student student1 = new ComputerScienceStudent("241242", "hans", "C++", "Frankfurt", 78291);
         //When
         String actual = student1.getCourse();
         //Then
@@ -56,7 +55,6 @@ class StudentTest {
 
 
     }
-
 
 
 }
