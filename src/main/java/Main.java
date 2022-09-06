@@ -11,6 +11,7 @@ public class Main {
         Student myStudent1 = new ComputerScienceStudent("52414", "Jonas","english");
 
         System.out.println(myStudent0);
+        System.out.println(((ComputerScienceStudent) myStudent0).getCourse());
 
 
     }

@@ -18,4 +18,9 @@ public class ComputerScienceStudent extends Student {
     public void setFavoriteLang(String favoriteLang) {
         this.favoriteLang = favoriteLang;
     }
+
+    public String getCourse(){
+        return "test for abstract mehtod";
+    }
+
 }

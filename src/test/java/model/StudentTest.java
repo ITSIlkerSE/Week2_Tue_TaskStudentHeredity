@@ -11,8 +11,8 @@ class StudentTest {
     @Test
     void testEquals_whenSameStudents_returnTrue(){
         // GIVE
-        Student student1 = new Student("123", "Ilker");
-        Student student2 = new Student("123", "Ilker");
+        Student student1 = new ComputerScienceStudent("123", "Ilker","german");
+        Student student2 = new ComputerScienceStudent("123", "Ilker","german");
 
         // WHEN
         boolean actual = student1.equals(student2);

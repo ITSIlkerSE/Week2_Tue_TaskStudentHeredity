@@ -2,7 +2,7 @@ package model;
 
 import java.util.Objects;
 
-public class Student {
+public abstract class Student {
 
     private String id;
     private String name;
@@ -29,6 +29,10 @@ public class Student {
     public void setName(String name) {
         this.name = name;
     }
+
+    abstract String getCourse();
+
+
 
     @Override
     public boolean equals(Object o) {
