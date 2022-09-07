@@ -15,16 +15,17 @@ public class Main {
         Student myStudent1 = new ComputerScienceStudent("52414", "Jonas", "english", "Flensburg", 424151);
         Student myStudent3 = new BiologyStudent("2313", "Peter", "C++", 231314);
 
+
         ArrayList studentList = new ArrayList();
 
         studentList.add(myStudent0);
         studentList.add(myStudent1);
         studentList.add(myStudent3);
 
+
         System.out.println(studentList.get(0));
         System.out.println(studentList.get(1));
         System.out.println(studentList.get(2));
-
 
     }
 
